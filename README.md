@@ -6,29 +6,29 @@ Este proyecto tiene dos ramas: master y develop. **master** contiene el proyecto
 
 1. [Contenido](#contenido)
 2. [Demo](#demo)
-3. [Instalación](#instalacin)
+3. [Instalación](#instalacion)
 4. [Pasos a seguir: tutorial](#pasos-a-seguir-tutorial)
    1. [Crear o clonar un repositorio Git](#1-crear-o-clonar-un-repositorio-git)
-   2. [Comprobar el estado del repositorio y añadir archivos al control de versiones](#2-comprobar-el-estado-del-repositorio-y-aadir-nuevos-archivos-al-control-de-versiones)
-   3. [Confirmar los cambios mediante commit y añadirlos al HEAD](#3-confirmar-los-cambios-mediante-commit-y-aadirlos-al-head)
+   2. [Comprobar el estado del repositorio y añadir archivos al control de versiones](#2-comprobar-el-estado-del-repositorio-y-anadir-nuevos-archivos-al-control-de-versiones)
+   3. [Confirmar los cambios mediante commit y añadirlos al HEAD](#3-confirmar-los-cambios-mediante-commit-y-anadirlos-al-head)
    4. [Revisar o deshacer commits ejecutados](#4-revisar-o-deshacer-commits-ejecutados)
    5. [Mostrar el historial de commits](#5-mostrar-el-historial-de-commits)
    6. [Incluir commits en el repositorio principal](#6-incluir-commits-en-el-repositorio-principal)
    7. [Crear, eliminar y enumerar etiquetas en Git](#7-crear-eliminar-y-enumerar-etiquetas-en-git)
    8. [Crear, administrar y eliminar ramas](#8-crear-administrar-y-eliminar-ramas)
 5. [Vista previa](#vista-previa)
-6. [Notas](#vista-previa)
+6. [Notas](#notas)
    1. [Markdown](#markdown)
    2. [Flujo de trabajo](#flujo-de-trabajo)
-   3. [Buenas prácticas](#buenas-prcticas)
-   4. [Operaciones básicas](#operaciones-bsicas)
-   5. [Conceptos básicos](#conceptos-bsicos)
+   3. [Buenas prácticas](#buenas-practicas)
+   4. [Operaciones básicas](#operaciones-basicas)
+   5. [Conceptos básicos](#conceptos-basicos)
 
 
 ## Demo
 Si quieres ver la demostración de este proyecto desplegado, puedes pinchar [aquí][git ingubu]
 
-## Instalación
+## Instalación {#instalacion}
 En la [página oficial del proyecto Git][web Git], encontrarás los **archivos de instalación binarios**, las **instrucciones para instalar el administrador de paquetes (sistemas Unix)** ylas **ediciones portátiles listas para usar** para cada sistema operativo. Solo tienes que descargar el paquete de instalación deseado o elegir el paquete apropiado mediante el administrador y, a continuación, seguir las instrucciones del asistente. Obviamente, con las ediciones portátiles no es necesario llevar a cabo la instalación.
 
 >**Consejo**: En la [página de descargas de git-scm.com][web git-scm], la comunidad de Git ofrece **diferentes interfaces gráficas** para el sistema de control de versiones. Recomendamos [SourceTree][web sourcetree] al ser una herramienta gratuita muy potente con una interfaz gráfica sencilla.
@@ -52,7 +52,7 @@ Si ya existe un repositorio Git para el proyecto, solo tienes que introducir el 
     
     git clone https://github.com/ajuarios/Git-Pill-Ingubu
 
-### 2. Comprobar el estado del repositorio y añadir nuevos archivos al control de versiones
+### 2. Comprobar el estado del repositorio y añadir nuevos archivos al control de versiones {#2-comprobar-el-estado-del-repositorio-y-anadir-nuevos-archivos-al-control-de-versiones}
 
 Uno de los conceptos básicos para utilizar Git es organizar adecuadamente el propio directorio de trabajo, lo que permite no solo proponer **cambios e innovaciones personales** a un proyecto, que luego son aceptados mediante el comando _git commit_ (enviar), sino también obtener **información sobre las actividades de otros usuarios**. Puedes comprobar si tu copia de trabajo está actualizada ejecutando este comando:
 
@@ -66,7 +66,7 @@ Para **añadir** un nuevo **archivo al control de versiones** o para **registrar
 
 Después, cuando vuelvas a comprobar el estado del repositorio, verás que el documento está a la espera de someterse a la **siguiente fase de confirmación de cambios** del proyecto, en que estos se aceptarán o no (_Changes to be commited_):
 
-### 3. Confirmar los cambios mediante commit y añadirlos al HEAD
+### 3. Confirmar los cambios mediante commit y añadirlos al HEAD {#3-confirmar-los-cambios-mediante-commit-y-anadirlos-al-head}
 
 Cualquier cambio que hayas propuesto incorporar al proyecto, como hemos explicado en el punto anterior, debe confirmarse con _commit_ para que **se incluya en el HEAD**. El HEAD es una especie de índice que apunta al último _commit_ efectuado en el entorno de trabajo Git actual (también llamado “rama”). El comando para hacerlo es el siguiente:
 
@@ -192,7 +192,7 @@ En los proyectos, se va a intentar seguir el siguiente flujo de trabajo:
 2. La rama *developer* contiene los últimos cambios de los desarrolladores. Esta rama es la que debe hacer peticiones a la *master* cuando se estime oportuno
 3. Las ramas *developer-name* únicamente existirán en los repositorios locales de los desarrolladores. Estas ramas deben actualizarse continuamente con la rama *developer* para actualizar los cambios de los compañeros.
 
-### Buenas prácticas
+### Buenas prácticas {#buenas-practicas}
 * Hacer *commits* frecuentes y pequeños (pero no a medias).
 * Rellenar siempre un mensaje por cada *commit*:
   * Breve
@@ -203,7 +203,7 @@ En los proyectos, se va a intentar seguir el siguiente flujo de trabajo:
 * Trabajar siempre en el directorio local, es decir, el que está en control de versiones, no en otra aparte.
 * Hacer updates (*pulls*) frcuentes para tener una copia local actualizada y evitar emplear mucho tiempo resolviendo conflictos.
 
-### Operaciones básicas
+### Operaciones básicas {#operaciones-basicas}
 
 #### commit
 Confirmar los ficheros preparados para su almacenamiento en el repositorio.
@@ -259,7 +259,7 @@ Repositorio remoto que se clona localmente
 
 ![Diagram_5](images/Diagram_5.PNG)
 
-### Conceptos básicos
+### Conceptos básicos {#conceptos-basicos}
 #### Control de versiones local
 Es el que se realiza en una sola máquina. Soportado por todos los sistemas de control de versiones, desde los más antiguos hasta los actuales. Se realiza sobre un directorio y todos sus subdirectorios.
 
