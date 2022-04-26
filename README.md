@@ -145,6 +145,9 @@ Antes de ejecutar el comando _git commit_, no te olvides de comprobar si has mar
 
 Después de ejecutar el comando, Git **inicia automáticamente el editor** que configuraste como predeterminado durante la instalación o que el propio sistema abre por defecto. En el documento, puedes añadir un **comentario personal** sobre el commit planificado, en el que las líneas anotadas se separan por punto y coma y, por lo tanto, no se muestran más adelante. En cuanto **cierres el editor**, Git creará el _commit_.
 
+>**Nota:**
+> Si no se abre ningún editor de texto y, por el contrario, permanecemos en el terminal vin, debemos introducir el texto del *commit* en la primera línea. Para salir, pulsamos **ESC** para que aparezca una línea de comandos al final del prompt e introducimos **:x**.
+
 Al ejecutar *git commit*, obtienes un mensaje que resume el *commit*: entre corchetes figuran, por un lado, el **nombre de la rama del proyecto** a la que se transfirieron los cambios (en este caso, _master_, ya que nuestro repositorio de trabajo también es el repositorio principal) y, por otra parte, la **suma de comprobación SHA-1** del _commit_ (en este caso, _c0fdc90_). Les siguen el comentario que anotó el propio usuario (aquí, “Test”) y algunos datos concretos sobre los cambios.
 
 ### 4. Revisar o deshacer commits ejecutados
@@ -186,6 +189,8 @@ Hasta ahora, hemos mostrado cómo guardar los cambios como *commit* en el HEAD d
     git push origin master
 
 De este modo, **Git transfiere automáticamente todos los *commits* ejecutados**, que hasta ahora solo habían estado en la copia de trabajo, **al directorio principal**, que también recibe el nombre de master. Si sustituyes este nombre por el de otra rama (la del proyecto), los archivos se enviarán directamente allí.
+
+>**Advertencia:** Si no habéis iniciado nunca sesión con vuestra cuenta de git, lo más común es que os salga un mensaje similar a 'error: failed to push some refs to *remote repository*'. Para solventarlo, introduciremos *git pull --rebase* para indicar que la rama principal es *main* y no *master*. Después, introduciremos *git push*, para lo cual nos pedirá iniciar sesión con nuestra cuenta de Git y finalizará la subida al repositorio remoto.
 
 ### 7. Crear, eliminar y enumerar etiquetas en Git
 
