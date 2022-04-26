@@ -1,10 +1,28 @@
 # Git-Pill-Ingubu
 Repositorio de ejemplo para la píldora de conceptos básicos de Git
 
-
 ## Contenido
 Este proyecto tiene dos ramas: master y develop. **master** contiene el proyecto en su versión más estable y **develop** muestra todas las pruebas que se han realizado para llegar a la última versión
 
+1. [Contenido](#contenido)
+2. [Demo](#demo)
+3. [Instalación](#instalacin)
+4. [Pasos a seguir: tutorial](#pasos-a-seguir-tutorial)
+   1. [Crear o clonar un repositorio Git](#1-crear-o-clonar-un-repositorio-git)
+   2. [Comprobar el estado del repositorio y añadir archivos al control de versiones](#2-comprobar-el-estado-del-repositorio-y-aadir-nuevos-archivos-al-control-de-versiones)
+   3. [Confirmar los cambios mediante commit y añadirlos al HEAD](#3-confirmar-los-cambios-mediante-commit-y-aadirlos-al-head)
+   4. [Revisar o deshacer commits ejecutados](#4-revisar-o-deshacer-commits-ejecutados)
+   5. [Mostrar el historial de commits](#5-mostrar-el-historial-de-commits)
+   6. [Incluir commits en el repositorio principal](#6-incluir-commits-en-el-repositorio-principal)
+   7. [Crear, eliminar y enumerar etiquetas en Git](#7-crear-eliminar-y-enumerar-etiquetas-en-git)
+   8. [Crear, administrar y eliminar ramas](#8-crear-administrar-y-eliminar-ramas)
+5. [Vista previa](#vista-previa)
+6. [Notas](#vista-previa)
+   1. [Markdown](#markdown)
+   2. [Flujo de trabajo](#flujo-de-trabajo)
+   3. [Buenas prácticas](#buenas-prcticas)
+   4. [Operaciones básicas](#operaciones-bsicas)
+   5. [Conceptos básicos](#conceptos-bsicos)
 
 
 ## Demo
@@ -167,6 +185,23 @@ Aquí debe mostrarse una vista previa del proyecto en cuestión, ya sean diagram
 ## Notas
 ### Markdown
 Un buen comienzo para escribir en Markdown es seguir el siguiente [**tutorial**][markdown tutorial]
+
+### Flujo de trabajo
+En los proyectos, se va a intentar seguir el siguiente flujo de trabajo:
+1. La rama *master* contiene el proyecto en su última versión más estable. Únicamente se subirán cambios a esta rama mediante pull-request aprobados por los administradores.
+2. La rama *developer* contiene los últimos cambios de los desarrolladores. Esta rama es la que debe hacer peticiones a la *master* cuando se estime oportuno
+3. Las ramas *developer-name* únicamente existirán en los repositorios locales de los desarrolladores. Estas ramas deben actualizarse continuamente con la rama *developer* para actualizar los cambios de los compañeros.
+
+### Buenas prácticas
+* Hacer *commits* frecuentes y pequeños (pero no a medias).
+* Rellenar siempre un mensaje por cada *commit*:
+  * Breve
+  * Explicativo
+  * En presente (el sujeto de la frase es el cambio realizado)
+  * En **INGLÉS**
+* Utilizar ficheros ignorados todo lo posible para no contaminar el repositorio.
+* Trabajar siempre en el directorio local, es decir, el que está en control de versiones, no en otra aparte.
+* Hacer updates (*pulls*) frcuentes para tener una copia local actualizada y evitar emplear mucho tiempo resolviendo conflictos.
 
 ### Operaciones básicas
 
