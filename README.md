@@ -5,93 +5,7 @@ Repositorio de ejemplo para la píldora de conceptos básicos de Git
 ## Contenido
 Este proyecto tiene dos ramas: master y develop. **master** contiene el proyecto en su versión más estable y **develop** muestra todas las pruebas que se han realizado para llegar a la última versión
 
-### Operaciones básicas
 
-#### commit
-Confirmar los ficheros preparados para su almacenamiento en el repositorio.
-
-#### checkout
-Obtener una copia local descargando un fichero del repositorio. Puede ser de la última versión o de cualquiera de las anteriores. Si se hace sobre un fichero modificado, se descartan las modificaciones sustituyéndose por el que había.
-
-#### add
-Realiza una copia de un fichero modificado, poniéndola en la zona de preparación para poder ser confirmada.
-
-#### reset
-Es el 'undo' de Git. Puede descartar la copia de la zona de preparación, pero también puede deshacer uno o varios commits (**MUY ÚTIL**) 
-
-#### diff
-Compara versiones de ficheros
-
-![Diagram_3](images/Diagram_3.PNG)
-
-#### clone
-Replica un repositorio entero con todo su historial de cambios y actualiza el directorio local
-
-#### push
-Es la operación en la que se envían al repositorio centralizado un *commit* o conjunto de *commits*.
-
-#### pull
-Es la operación en la que se actualiza el repositorio local y el directorio local con commits que provienen del repositorio remoto.
-
-#### fetch
-Trae commits de un repositorio remoto a un repositorio local, pero no actualiza el directorio local. Se utiliza menos que las otras.
-
-![Diagram_4](images/Diagram_4.PNG)
-
-#### merge
-Traslada los cambios de una rama a otra.
-
-#### rebase
-'Transplanta' sobre un tronco que ha crecido depués de crear la rama.
-
-#### checkout
-Saca al directorio de trabajo una rama concreta.
-
-#### pull request (entre ramas)
-Petición que hace el desarrollador de una rama para que sus cambios se fundan con la rama principal.
-
-#### fork
-Clone que se hace dentro del mismo servidor. Por ejemplo, el repositorio original y el clonado ambos residen en Github o Bitbucket. Al original se le suele llamar ***UPSTREAM***
-
-#### pull request (entre repositorios)
-Petición que hace el desarrollador para que los cambios hechos en su repositorio clonado mediante un *fork* sean incorporados al repositorio original.
-
-#### origin
-Repositorio remoto que se clona localmente
-
-![Diagram_5](images/Diagram_5.PNG)
-
-### Conceptos básicos
-#### Control de versiones local
-Es el que se realiza en una sola máquina. Soportado por todos los sistemas de control de versiones, desde los más antiguos hasta los actuales. Se realiza sobre un directorio y todos sus subdirectorios.
-
-#### Repositorio local
-Es una base de datos centralizado donde se guardan las distintas versiones de los ficheros sometidos a control de versiones.
-
-#### Versión (*Commit*)
-Cada uno de los cambios que sufre un fichero y que quedan identificados por un número único.
-
-#### Copia local
-Es la copia que haces los usuarios de un fichero sometido a control de versiones. El **DIRECTORIO LOCAL** es el que contiene todas las copias locales.
-
-![Diagram_1](images/Diagram_1.PNG)
-
-#### LOG
-Registro de todos los cambios que se han producido en el repositorio. Es responsabilidad del cliente añadir información al log cuando se produce un cambio
-
-#### Fichero confirmado (*commited file*)
-Es el fichero que ya está almacenado en el repositorio. La última versión y la copia local son iguales.
-
-#### Fichero modificado (*modified file*)
-Es el fichero modificado en la copia local. Existe una diferencia entre la copia local y la última versión en el repositorio.
-
-#### Fichero preparado (*staged file*)
-Es la copia del fichero modificado preparada para ser confirmada en la próxima operación de confirmación (***COMMIT***). La zona de preparación contiene todos los ficheros preparados.
-
-#### Fichero ignorado (*ignored file*)
-Es el fichero que está en el directorio local pero que deliberadamente no se somete a control de versiones.
-
-![Diagram_2](images/Diagram_2.PNG)
 
 ## Demo
 Si quieres ver la demostración de este proyecto desplegado, puedes pinchar [aquí][git ingubu]
@@ -246,9 +160,101 @@ Si has fusionado varias ramas de trabajo y, por lo tanto, ya no te hace falta un
 El único **requisito para eliminar una rama** es encontrarse en otra distinta en ese momento.
 
 ## Vista previa
+Aquí debe mostrarse una vista previa del proyecto en cuestión, ya sean diagramas o ejemplos de funcionamiento.
+
+![Image_1](images/Image_1.PNG)
 
 ## Notas
+### Markdown
 Un buen comienzo para escribir en Markdown es seguir el siguiente [**tutorial**][markdown tutorial]
+
+### Operaciones básicas
+
+#### commit
+Confirmar los ficheros preparados para su almacenamiento en el repositorio.
+
+#### checkout
+Obtener una copia local descargando un fichero del repositorio. Puede ser de la última versión o de cualquiera de las anteriores. Si se hace sobre un fichero modificado, se descartan las modificaciones sustituyéndose por el que había.
+
+#### add
+Realiza una copia de un fichero modificado, poniéndola en la zona de preparación para poder ser confirmada.
+
+#### reset
+Es el 'undo' de Git. Puede descartar la copia de la zona de preparación, pero también puede deshacer uno o varios commits (**MUY ÚTIL**) 
+
+#### diff
+Compara versiones de ficheros
+
+![Diagram_3](images/Diagram_3.PNG)
+
+#### clone
+Replica un repositorio entero con todo su historial de cambios y actualiza el directorio local
+
+#### push
+Es la operación en la que se envían al repositorio centralizado un *commit* o conjunto de *commits*.
+
+#### pull
+Es la operación en la que se actualiza el repositorio local y el directorio local con commits que provienen del repositorio remoto.
+
+#### fetch
+Trae commits de un repositorio remoto a un repositorio local, pero no actualiza el directorio local. Se utiliza menos que las otras.
+
+![Diagram_4](images/Diagram_4.PNG)
+
+#### merge
+Traslada los cambios de una rama a otra.
+
+#### rebase
+'Transplanta' sobre un tronco que ha crecido depués de crear la rama.
+
+#### checkout
+Saca al directorio de trabajo una rama concreta.
+
+#### pull request (entre ramas)
+Petición que hace el desarrollador de una rama para que sus cambios se fundan con la rama principal.
+
+#### fork
+Clone que se hace dentro del mismo servidor. Por ejemplo, el repositorio original y el clonado ambos residen en Github o Bitbucket. Al original se le suele llamar ***UPSTREAM***
+
+#### pull request (entre repositorios)
+Petición que hace el desarrollador para que los cambios hechos en su repositorio clonado mediante un *fork* sean incorporados al repositorio original.
+
+#### origin
+Repositorio remoto que se clona localmente
+
+![Diagram_5](images/Diagram_5.PNG)
+
+### Conceptos básicos
+#### Control de versiones local
+Es el que se realiza en una sola máquina. Soportado por todos los sistemas de control de versiones, desde los más antiguos hasta los actuales. Se realiza sobre un directorio y todos sus subdirectorios.
+
+#### Repositorio local
+Es una base de datos centralizado donde se guardan las distintas versiones de los ficheros sometidos a control de versiones.
+
+#### Versión (*Commit*)
+Cada uno de los cambios que sufre un fichero y que quedan identificados por un número único.
+
+#### Copia local
+Es la copia que haces los usuarios de un fichero sometido a control de versiones. El **DIRECTORIO LOCAL** es el que contiene todas las copias locales.
+
+![Diagram_1](images/Diagram_1.PNG)
+
+#### LOG
+Registro de todos los cambios que se han producido en el repositorio. Es responsabilidad del cliente añadir información al log cuando se produce un cambio
+
+#### Fichero confirmado (*commited file*)
+Es el fichero que ya está almacenado en el repositorio. La última versión y la copia local son iguales.
+
+#### Fichero modificado (*modified file*)
+Es el fichero modificado en la copia local. Existe una diferencia entre la copia local y la última versión en el repositorio.
+
+#### Fichero preparado (*staged file*)
+Es la copia del fichero modificado preparada para ser confirmada en la próxima operación de confirmación (***COMMIT***). La zona de preparación contiene todos los ficheros preparados.
+
+#### Fichero ignorado (*ignored file*)
+Es el fichero que está en el directorio local pero que deliberadamente no se somete a control de versiones.
+
+![Diagram_2](images/Diagram_2.PNG)
 
 
 [web sourcetree]: https://www.sourcetreeapp.com/
