@@ -291,6 +291,29 @@ Es el fichero que está en el directorio local pero que deliberadamente no se so
 
 ![Diagram_2](images/Diagram_2.PNG)
 
+#### Control de versiones centralizado
+Es el control de versiones que se realiza sobre ficheros compartidos que se sitúan en un servidor accesible desde varios clientes
+
+#### Repositorio remoto
+Es una base de datos centralizada donde se guardan las distintas versiones de los ficheros sometidos a control de versiones, y reside en el servidor centralizado.
+
+#### Copia local
+Es la copia que hacen los usuarios de un fichero sometido a control de versiones. El **directorio local** es el que contiene todas las copias locales.
+
+#### Conflicto
+Problema que surge cuando los clientes realizan cambios incompatibles entre sí.
+
+![Diagram_6](images/Diagram_6.PNG)
+
+#### Control de versiones distribuido
+Aquel que se organiza de manera que no existe un único servidor centralizado, sino múltiples servidores que colaboran entre sí y que se pueden enviar cambios entre ellos.
+
+![Diagram_7](images/Diagram_7.PNG)
+
+#### Rama (*branch*)
+Cada uno de los caminos de cambios que pueden generarse en un sistema de control de versiones, formando un árbol que parte de la primera versión inicial. **No es exclusivo de los distribuidos**. Sin embargo, los distribuidos favorecen nuevos flujos de trabajo en los que las ramas son imprescindibles.
+
+
 
 [web sourcetree]: https://www.sourcetreeapp.com/
 [web Git]: https://git-scm.com/downloads
